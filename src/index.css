@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #050505; /* Deep Black */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Global Utility Classes */
+.ocean-blue-text {
+    color: #0077be;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #005a92;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #050505;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0077be;
+    box-shadow: 0 0 8px rgba(0, 119, 190, 0.5);
+}
+
+/* Auth Component Specific Styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Takes up remaining height */
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #111111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 119, 190, 0.3); /* Ocean Blue Glow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #0077be;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.error-text {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Dashboard Component Specific Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111111;
+    border-bottom: 2px solid #0077be;
+}
+
+.logout-btn {
+    width: auto;
+    padding: 8px 20px;
+    margin-top: 0; /* overrides default button margin */
+}
+
+.dashboard-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dashboard-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 119, 190, 0.5); /* Ocean blue text shadow */
+}
